@@ -18,3 +18,6 @@ Usage :
 Example :<br>
 \# `curl localhost:32770/factors?number=217896473`<br>
 `{ "result": "151*1051*1373" }`<br><br>
+
+PS :<br>
+若使用`ZSH`，需要在`curl`命令中的`?`前加转义符号
