@@ -7,7 +7,7 @@ Intro :<br>
 
 Clone && Build :<br>
 - `git clone https://github.com/royfhs/alitest.git && cd ./alitest`
-- `docker build -t alitest .`
+- `docker build --network=host -t alitest .`
 - `docker run -P alitest` （需要通过docker ps查看所开放的随机端口，随后进行访问）
 - or `docker run -p xxxx:5000 alitest` (xxxx为欲开放宿主机端口，如8080)
 
@@ -20,4 +20,5 @@ Example :<br>
 `{ "result": "151*1051*1373" }`<br><br>
 
 PS :<br>
-若使用`ZSH`，需要在`curl`命令中的`?`前加转义符号
+- 若使用`ZSH`，需要在`curl`命令中的`?`前加转义符号
+- 为了避免`pip`超时问题，需要在`docker build`是附加参数`--network=host`
