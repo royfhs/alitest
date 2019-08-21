@@ -21,4 +21,4 @@ Example :<br>
 
 PS :<br>
 - 若使用`ZSH`，需要在`curl`命令中的`?`前加转义符号
-- 为了避免`pip`超时问题，需要在`docker build`是附加参数`--network=host`
+- 为了避免`pip`超时问题，需要在`docker build`附加参数`--network=host`
