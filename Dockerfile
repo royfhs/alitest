@@ -11,4 +11,7 @@ COPY . /usr/src/app
 
 CMD python manager.py runserver -h 0.0.0.0
 
+ENV http_proxy http://proxy-chain.xxx.com:911/
+ENV https_proxy http://proxy-chain.xxx.com:912/
+
 EXPOSE 5000
